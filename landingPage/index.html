@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VistaEurope</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <style>
+      @media screen and (max-width: 768px) {
+        
+        .nav {
+          flex-wrap: wrap; 
+          padding: 10px 0;
+      }
+  
+      .logo-img {
+          margin: 0 10px; 
+      }
+  
+      .nav-content, .search-bar {
+          padding: 5px 10px;
+          font-size: smaller; 
+      }
+  
+      .search-bar {
+          padding: 5px;
+          width: auto; 
+      }
+
+      .iframe {
+        width: 90%;
+        height: 300px;
+      }
+        
+      .europe-map, .tour-1-img, .tips-img {
+          display: block;
+          margin: 5px auto;
+          width: 90%;
+          height: auto;
+      }
+    
+      .section, .tour-1, .tour-2, .tour-3  {
+          flex-direction: column;
+          align-items: center;
+      }
+    
+      .tips-cards, .tips-title{
+        visibility: hidden;
+      }
+
+      .card, .img-card {
+        width: 100%;
+      }
+    
+      .title, .discription, .trip-title, .tour-title {
+        font-size: 20px; 
+        text-align: center;
+      }
+    
+      .container {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+      .know-more {
+        visibility: hidden;
+      }
+    
+      .know-inp, .know-btn {
+        width: 80%;
+        margin: 10px auto;
+      }
+    }
+    
+    </style>
+    
+</head>
+<body>
+  <body>
+    <!--Navigation Bar-->
+    <div class="nav">
+      <div class="logo">
+        <a href="./index.html">
+          <img
+            src="./icons/vista-Europe.png"
+            alt="vista-europe"
+            class="logo-img"
+          />
+        </a>
+      </div>
+      <div class="nav-content">
+        <a href="index.html" class="nav-anchor"> Home </a>
+      </div>
+      <div class="nav-content">
+        <a href="#" class="nav-anchor"> Destination </a>
+      </div>
+      <div class="nav-content">
+        <a href="#" class="nav-anchor"> Experiences </a>
+      </div>
+      <div class="nav-content">
+        <form>
+          <input
+            class="search-bar"
+            type="text"
+            placeholder=" Enter Destination 🔍"
+          />
+        </form>
+      </div>
+      <div class="nav-content">   
+        <a href="#" class="nav-anchor"> Login </a>
+      </div>
+    </div>
+
+    <div class="vid-main">
+      <iframe width="900" height="500" src="https://www.youtube-nocookie.com/embed/KnUEB5XX3qw?si=YZEkuepfcX8WNKHd&amp;controls=0&amp;start=00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="iframe"></iframe>
+    </div>
+
+    <div class="destination">
+      <div class="title">
+        <p><b>Destination</b></p>
+      </div>
+      <div class="discription">
+        <p>
+          Europe is also known for its natural beauty, ranging from the rugged fjords of Norway to the sun-soaked beaches of the Mediterranean. The Alps and the Pyrenees offer breathtaking mountain landscapes that attract skiers and hikers from all over the world. Meanwhile, the rolling countryside of Tuscany, the lavender fields of Provence, and the wild coastlines of the Atlantic offer more serene but equally stunning vistas.
+        </p>
+        <p>- - - - - - - - - - - - - - - - - - - - - - - - -</p>
+      </div>
+      <div class="section">
+        <div class="left">
+          <img src="./img/map" alt="europe-map" class="europe-map" />
+        </div>
+        <div class="right">
+          <ul>
+            <li>Scandinavia</li>
+            <li>Baltics</li>
+            <li>Mediterranean</li>
+            <li>East Europe</li>
+            <li>Central Europe</li>
+            <li>Western Europe</li>
+            <li>Russia</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="find-perfect-trip">
+      <div class="trip-title">
+        <p>Find our perfect trip</p>
+      </div>
+      <div class="container">
+        <div class="card">
+          <a href="#">
+            <img
+              src="https://www.fodors.com/wp-content/uploads/2018/10/HERO_UltimateRome_Hero_shutterstock789412159.jpg"
+              alt="heritage"
+              class="card-img"
+            />
+          </a>
+          <p class="card-title">Heritage and Culture</p>
+          <p class="card-discription">
+            Europe's heritage and culture are a profound tapestry of historical
+            landmarks, shaping a continent rich in history and global influence.
+          </p>
+          <a href="#" class="anc">
+            <button class="btn-know-more anc">Know More!!</button>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img
+              src="https://i0.wp.com/triponzy.com/blog/wp-content/uploads/2019/06/popular-churches-europe.jpg?fit=1920%2C1280&ssl=1"
+              alt="spritual"
+              class="card-img"
+            />
+          </a>
+          <p class="card-title">Spiritual</p>
+          <p class="card-discription">
+            Europe's spiritual landscape is rich and diverse, blending ancient
+            traditions with modern movements in a quest for meaning and
+            connection.
+          </p>
+          <a href="#" class="anc">
+            <button class="btn-know-more anc">Know More!!</button>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img
+              src="https://holidays.tripfactory.com/blogs/wp-content/uploads/sites/6/2024/06/Dolomites.webp"
+              alt="nature and wildlife"
+              class="card-img"
+            />
+          </a>
+          <p class="card-title">Nature & Wildlife</p>
+          <p class="card-discription">
+            Europe's natural landscapes range from the rugged Arctic tundras to
+            the serene Mediterranean shores, hosting a vast array of wildlife,
+            including rare species.
+          </p>
+          <a href="#" class="anc">
+            <button class="btn-know-more anc">Know More!!</button>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img
+              src="https://assets.cntraveller.in/photos/64e856f849623e7daecb81a9/16:9/w_1024%2Cc_limit/1177087824"
+              alt="arts"
+              class="card-img"
+            />
+          </a>
+          <p class="card-title">Arts</p>
+          <p class="card-discription">
+            Europe's arts scene is a vibrant tapestry of history and innovation,
+            where ancient masterpieces and contemporary creations vividly
+            reflect the continent's rich cultural legacy.
+          </p>
+          <a href="#" class="anc">
+            <button class="btn-know-more anc">Know More!!</button>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img
+              src="https://www.flytographer.com/wp-content/uploads/2017/09/5ad1765b498b4_Click%20to%20see%20the%20Top%2010%20most%20Romantic%20Cities%20to%20Propose%20in%20Europe!%20Flytographer%20Surprise%20Proposal%20Photographer.jpgClick%20to%20see%20the%20Top%2010%20most%20Romantic%20Cities%20to%20Propose%20in%20Europe!%20Flytographer%20Surprise%20Proposal%20Photographer"
+              alt="romance"
+              class="card-img"
+            />
+          </a>
+          <p class="card-title">Romance</p>
+          <p class="card-discription">
+            Europe's romantic cities, with their charming streets, breathtaking
+            architecture, and intimate cafes, offer timeless settings for love
+            and exploration.
+          </p>
+          <a href="#" class="anc">
+            <button class="btn-know-more anc">Know More!!</button>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img
+              src="https://www.theevolista.com/wp-content/uploads/2019/07/Cappadocia-Balloons-1.jpg"
+              alt="adventure"
+              class="card-img"
+            />
+          </a>
+          <p class="card-title">Adventure</p>
+          <p class="card-discription">
+            Europe offers thrilling adventures, from the snowy peaks of the Alps
+            to the rugged coastlines of the Atlantic, catering to every
+            explorer's dream of adventure and discovery.
+          </p>
+          <a href="#" class="anc">
+            <button class="btn-know-more anc">Know More!!</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour-packages">
+      <div class="tour-title">
+        <p>Tours and Packages</p>
+      </div>
+      <div class="tour-1">
+        <div class="tour-1-img">
+          <a href="#">
+            <img
+              src="https://www.holland.com/upload_mm/2/3/6/75601_fullimage_aerial%20view%20of%20downtown%20amsterdam%2C%20the%20netherlands%20during%20a%20dramatic%20beautiful%20sunset%20foto%20repistu%20via%20istock.jpg"
+              alt="tour-1"
+              class="tour-1-img"
+            />  
+          </a>
+        </div>
+        <div class="tour-1-info">
+          <div class="tour-1-title">
+            <a href="#" class="anc" style="color: #112D4E">
+              <p>European Explorer</p>
+            </a>
+          </div>
+          <div class="tour-1-discription">
+            <p>
+              <ul>
+                <li>Edinburgh Castle</li>
+                <li>Drive Through Yorkshire Dales National Park</li>
+                <li>Enjoy Cruise Ride On Lake Windermere
+                  Stonehenge</li>
+                <li>Explore The City Of Bath</li>
+                <li>The University Of Oxford</li>
+                <li>Windsor Castle & many more.....</li>
+              </ul>
+            </p>
+          </div>
+          <div>
+            <a href="#" class="anc">
+              <button class="tour-1-btn">Get Details</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tour-2">
+        <div class="tour-1-info">
+          <div class="tour-1-title">
+            <a href="#" class="anc" style="color: #112D4E">
+              <p>Romantic Switzerland and Paris 2024</p>
+            </a>
+          </div>
+          <div class="tour-1-discription">
+            <p>
+              <ul>
+                <li>Take a journey on panoramic Golden Pass Train to Gstaad</li>
+                <li>Enjoy a cruise on Lake Geneva between Lausanne and Montreux</li>
+                <li>Witness breath-taking mountain peaks and glaciers at Mt. Titlis</li>
+                <li>Ride in the world’s first revolving cable car</li>
+                <li>Enjoy romantic cruise on River Seine</li>
+                <li>Visit to the 2nd level of the Eiffel Tower & many more.....</li>
+              </ul>
+            </p>
+          </div>
+          <div>
+            <a href="#" class="anc">
+              <button class="tour-1-btn">Get Details</button>
+            </a>
+          </div>
+        </div>
+        <div class="tour-1-img">
+          <a href="#">
+            <img
+              src="https://www.pocketwanderings.com/wp-content/uploads/2021/01/Spiez-1.jpg"
+              alt="tour-2"
+              class="tour-1-img"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="tour-3">
+        <div class="tour-1-img">
+          <a href="#">
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/552fcfb0e4b09789d7ec24d5/1542211190439-C0DFB97FZB18KRGD7BPT/Budapest+at+Nite_shutterstock_111856853.jpg?format=1000w"
+              alt="tour-1"
+              class="tour-1-img"
+            />
+          </a>
+        </div>
+        <div class="tour-1-info">
+          <div class="tour-1-title">
+            <a href="#" class="anc" style="color: #112D4E">
+              <p>Jewels Of Austria Prague and Budapest</p>
+            </a>
+          </div>
+          <div class="tour-1-discription">
+            <p>
+              <ul>
+                <li>Multiple Entry Schengen Visa (with Guaranteed Visa Appointments)</li>
+                <li>Guided City Tour Of Budapest</li>
+                <li>Enjoy exotic Szechenyi Thermal Baths</li>
+                <li>Orientation Tour Of Bratislava</li>
+                <li>Vltava River Cruise</li>
+                <li>Day trip to Hallstatt</li>
+              </ul>
+            </p>
+          </div>
+          <div>
+            <a href="#" class="anc">
+              <button class="tour-1-btn">Get Details</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tips-to-travel">
+      <div class="tips-title">
+        <p>Tips to plan your travel to Europe</p>
+      </div>
+      <div class="tips-cards">
+        <div class="img-card">
+          <img
+            src="https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/tst2gsynvucbnmmqq86r"
+            alt="img"
+            class="tips-img"
+          />
+          <p class="tips-text">TRAVELING AROUND EUROPE <br><br></p>
+          <a href="#" class="anc">
+          <button class="btn-know-more">Know More!!</button>
+        </a>
+        </div>
+        <div class="img-card">
+          <img
+            src="https://student-room-flat.com/wp-content/uploads/2022/02/Top-5-cities-for-Rental-Properties-3.jpg"
+            alt="img"
+            class="tips-img"
+          />
+          <p class="tips-text">
+            HOW TO CHOOSE YOUR ACCOMMODATION IN EUROPE: A GUIDE
+          </p>
+          <a href="#" class="anc">
+            <button class="btn-know-more anc">Know More!!</button>
+          </a>
+        </div>
+        <div class="img-card">
+          <img
+            src="https://www.datocms-assets.com/32623/1649191786-walking_street_shops.jpeg"
+            alt="img"
+            class="tips-img"
+          />
+          <p class="tips-text">
+            HOW TO STAY SAFE WHILE
+            TRAVELING IN EUROPE
+          </p>
+          <a href="#" class="anc">
+            <button class="btn-know-more anc">Know More!!</button>
+          </a>
+        </div>
+        <div class="img-card">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/570573b259827eb60eabc3fc/1586993300322-88M6MV22PC9UMUZYWR1P/20190705-IMG_5368.jpg"
+            alt="img"
+            class="tips-img"
+          />
+          <p class="tips-text">
+            YOUR COMPLETE GUIDE TO PLANNING YOUR DAILY LIFE IN EUROPE
+          </p>
+          <a href="#" class="anc">
+            <button class="btn-know-more anc">Know More!!</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="know-more">
+      <div>
+        <p class="know-more-title">Want to know more about Europe?</p>
+        <p class="know-more-discription">Sign up to our newsletter here:</p>
+      </div>
+        <div class="know">
+          <input type="text" placeholder="name" class="know-inp">
+        </div>
+        <div class="know">
+          <input type="email" placeholder="email" class="know-inp">
+        </div>
+        <div class="know">
+          <button class="know-btn know-inp">Register</button>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+      <div class="inner-footer">
+        <div class="container0">
+          <p class="footer-title">
+            <img
+              src="./icons/vista-Europe.png"
+              alt="vista-Europe"
+              class="footer-logo"
+            />
+            <span class="footer-name"> Vista-Europe</span>
+          </p>
+          <br />
+          <p>
+            "Europe's rich history and vast array of cultures makes it a perfect
+            destination for exploration and discovery."
+          </p>
+        </div>
+        <div class="container1">
+          <div class="footer-content">
+            <p class="footer-title"><b> Docs </b></p>
+            <a href="#" class="footer-anchor"
+              ><span>Destinations</span></a
+            >
+            <br />
+            <a href="#" class="footer-anchor"
+              ><span>Experiences</span></a
+            >
+            <br />
+            <a href="#" class="footer-anchor"><span>Customized Trips</span></a>
+            <br />
+            <a href="#" class="footer-anchor"><span>Itinearies</span></a> <br />
+            <a href="#" class="footer-anchor"><span>Group Trips</span></a>
+            <br />
+            <a href="#" class="footer-anchor"><span>Couple Trips</span></a>
+            <br />
+            <a href="#" class="footer-anchor"><span>Blog</span></a> <br />
+            <a href="#" class="footer-anchor"
+              ><span>About Us</span></a
+            >
+            <br />
+          </div>
+
+          <div class="footer-content">
+            <p class="footer-title"><b> Quick links </b></p>
+            <a href="#" class="footer-anchor"
+              ><span>Europe Holiday Packages</span></a
+            >
+            <br />
+            <a href="#" class="footer-anchor"
+              ><span>East European Tour Packages</span></a
+            >
+            <br />
+            <a href="#" class="footer-anchor"
+              ><span>Sweden Tour Packages</span></a
+            >
+            <br />
+            <a href="#" class="footer-anchor"
+              ><span>France Honeymoon Packages</span></a
+            >
+            <br />
+            <a href="#" class="footer-anchor"
+              ><span>Italy Honeymoon Packages</span></a
+            >
+            <br />
+            <a href="#" class="footer-anchor"
+              ><span>Switzerland Honeymoon Package</span></a
+            >
+            <br />
+            <a href="#" class="footer-anchor"
+              ><span>Norway Holiday Packages</span></a
+            >
+            <br />
+            <a href="#" class="footer-anchor"
+              ><span>UK Trip Packages from India</span></a
+            >
+          </div>
+        </div>
+        <div class="container2">
+          <p class="footer-title">Contact Details</p>
+          <a
+            href="https://maps.app.goo.gl/9cwJUf8Ruc1zuFEz8"
+            class="footer-anchor"
+            target="_blank"
+          >
+            <img
+              src="./icons/location.png"
+              alt="location"
+              class="contact-logo"
+            />
+            <span
+              >ABC, XYZ <br />
+              Pune  </span
+            >
+          </a>
+          <br />
+          <a href="tel: +91-88058030" class="footer-anchor">
+            <img src="./icons/telephone.png" alt="phone" class="contact-logo" />
+            <span>+91-88058030</span>
+          </a>
+          <br />
+          <a href="mailto: sahilapatil2004@gmail.com" class="footer-anchor">
+            <img src="./icons/mail.png" alt="mail" class="contact-logo" />
+            <span>sahilapatil2004@gmail.com</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-end">
+        <p>© 2024 Freedom Holidays</p>
+        <p>All rights Reserverd Terms of Use Privacy Policy</p>
+      </div>
+    </div>
+  </body>
+</html>
